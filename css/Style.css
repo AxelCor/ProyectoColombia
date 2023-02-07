@@ -31,7 +31,6 @@ background-image: url(../imagenes/fondo14.png);
 }
 
 .card{
-  margin: 50px auto auto;
   padding: 1em;
   border-radius: 10em;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -394,8 +393,50 @@ a:hover .nose{
     }
   } 
 
-  @media only screen and (max-width: 600px) {
-    .mainItems {
-      grid-template-columns: auto;
-    }
+  .g1{
+    grid-area: primero;
   }
+  .g2{
+    grid-area: segundo;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .g3{
+    grid-area: tercero;
+    display: flex;
+    justify-content: center;
+  }
+  .g4{
+    grid-area: cuarto;
+  }
+  .g5{
+    grid-area: quinto;
+  }
+
+.grilla1{
+  display: grid;
+  grid-template-areas:
+  'primero segundo'
+  'tercero tercero'
+  'none none';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  height: 100vh;
+  margin: 0;
+}
+
+.grilla2{
+  display: grid;
+  grid-template-areas:
+  '4'
+  '5';
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  height: 100vh;
+  margin: 0;
+}
+
