@@ -26,9 +26,9 @@ background-image: url(../imagenes/fondo14.png);
 .fondoJuegos{
   background-image: url(../imagenes/fondo12.jpg);
 }
-.acomodando{
+/* .acomodando{
   margin-top: -310px;
-}
+} */
 
 .card{
   padding: 1em;
@@ -39,10 +39,11 @@ background-image: url(../imagenes/fondo14.png);
 }
 .cardJuegos {
   margin: auto;
-  padding: 1em;
-  border-radius: 10em;
   transform: perspective(500px);
   transform-style: preserve-3d;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 video{
@@ -171,15 +172,15 @@ a:hover .nose{
   visibility: visible;
 }
 
-.top{
+/* .top{
   top: -180px;
   position: relative;
-}
+} */
 .mundo{
-  height: 450px;
+  height: 250px;
 }
 .mundodiv{
-  margin-right: 50px;
+  margin: 20px;
 }
 
 /* NOSOTROS */
@@ -408,9 +409,14 @@ a:hover .nose{
   }
   .g4{
     grid-area: cuarto;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
   }
   .g5{
     grid-area: quinto;
+    display: flex;
+    justify-content: center;
   }
 
 .grilla1{
@@ -422,7 +428,6 @@ a:hover .nose{
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
-  grid-row-gap: 15px;
   height: 100vh;
   margin: 0;
 }
@@ -430,13 +435,28 @@ a:hover .nose{
 .grilla2{
   display: grid;
   grid-template-areas:
-  '4'
-  '5';
+  'cuarto'
+  'quinto';
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
   height: 100vh;
   margin: 0;
 }
 
+.cuento{
+  background-color: red;
+      margin: 20px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.footer{
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
