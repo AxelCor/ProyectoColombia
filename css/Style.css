@@ -61,7 +61,7 @@ video{
 }
 
 .container  {
-  /* margin: 8px; */
+  margin: 8px;
   height: 240px;
   width: 400px;
   background: #f2f2f2;
@@ -471,20 +471,5 @@ a:hover .nose{
 
 @media (max-width: 767px) {
 
-  .container {
-  
-  grid-template-areas:
-  
-  «header»
-  
-  «main»
-  
-  «nav»
-  
-  «redes»
-  
-  «contacto»
-  
-  «footer»
   
   }
