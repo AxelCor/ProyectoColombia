@@ -61,9 +61,7 @@ video{
 }
 
 .container  {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+  margin: 8px;
   height: 240px;
   width: 400px;
   background: #f2f2f2;
@@ -71,12 +69,15 @@ video{
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0 0 4px 8px #d0d0d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-  padding: 17px;
+  /* padding: 17px;
   position: absolute;
-  margin-left: 13%;
+  margin-left: 13%; */
 }
 
 
@@ -459,4 +460,11 @@ a:hover .nose{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex{
+  display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100vh;
 }
