@@ -470,6 +470,15 @@ a:hover .nose{
 }
 
 @media (max-width: 767px) {
-
+  .flex{
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .container{
+    height: auto;
+    width: auto;
+    box-shadow: 0;
+  }
   
   }
