@@ -26,6 +26,9 @@ background-image: url(../imagenes/fondo14.png);
 .fondoJuegos{
   background-image: url(../imagenes/fondo12.jpg);
 }
+.fondoindex{
+  background-color: black;
+}
 /* .acomodando{
   margin-top: -310px;
 } */
@@ -473,7 +476,6 @@ a:hover .nose{
   .flex{
     align-items: center;
     justify-content: center;
-    
   }
   .container{
     height: auto;

@@ -6,8 +6,46 @@
     <title>Mi Bello Pais Colombia</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/Style.css'>
+
+    <style>
+      .movil{
+          width: 50px;
+          height: 50px;
+          background-color: red;
+          border-radius: 50%;
+          position: absolute;
+          top:50%;
+          left:50%;
+      }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+      var posicionOrigTop = 0;
+      var posicionOrigLeft = 0;
+      function onLoad() {
+          if (!window.DeviceOrientationEvent) {
+              alert('No hay soporte para DeviceOrientationEvent');
+          } else {
+              this.posicionOrigTop = $('.movil').position().top;
+              this.posicionOrigLeft = $('.movil').position().left;
+              window.addEventListener("deviceorientation", orientacion, true);
+          }
+      }
+      function orientacion(event) {
+          var x = event.beta;
+          var y = event.gamma;
+          $('.movil').css({'top': this.posicionOrigTop + (x * 4), 'left': this.posicionOrigLeft + (y * 4)});
+      }
+  </script>
+
+
 </head>
-<body>
+<body class="fondoindex" onload="onLoad();">
+
+  
+    <div class="movil">&nbsp;</div>
+
+
       <div style="display: grid;">
         <video src="./imagenes/videofondo.mp4" autoplay="true" muted="true" loop="true" ></video>
         <div class="flex">
