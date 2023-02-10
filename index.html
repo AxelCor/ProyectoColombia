@@ -6,29 +6,12 @@
     <title>Mi Bello Pais Colombia</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/Style.css'>
-
-  <script type="text/javascript">
-      var posicionOrigTop = 0;
-      var posicionOrigLeft = 0;
-      function onLoad() {
-          if (!window.DeviceOrientationEvent) {
-              alert('No hay soporte para DeviceOrientationEvent');
-          } else {
-              this.posicionOrigTop = $('.movil').position().top;
-              this.posicionOrigLeft = $('.movil').position().left;
-              window.addEventListener("deviceorientation", orientacion, true);
-          }
-      }
-      function orientacion(event) {
-          var x = event.beta;
-          var y = event.gamma;
-          $('.movil').css({'top': this.posicionOrigTop + (x * 4), 'left': this.posicionOrigLeft + (y * 4)});
-      }
-  </script>
+    <script type="text/javascript" src='./paginas/movimiento.js'></script>
+  
 
 
 </head>
-<body class="fondoindex" onload="onLoad();">
+<body class="fondoindex">
 
   
 
@@ -37,12 +20,9 @@
         <video src="./imagenes/videofondo.mp4" autoplay="true" muted="true" loop="true" ></video>
         <div class="flex">
           <a href="./paginas/cuento.html">
-            <div class="container movil">
+            <div class="container">
               <div class="content">
                 <img class="imginicio" src="./imagenes/titulo.png" alt="KANTICUENTOS INTI">
-              </div>
-              <!-- <div class="flap"></div> -->
-            </div>
           </a>
         </div>
       </div>

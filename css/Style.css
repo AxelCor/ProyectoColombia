@@ -84,35 +84,7 @@ video{
 }
 
 
-.flap {
-  width: 100%;
-  height: 100%;
-}
 
-.flap::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 50%;
-  background: url("../imagenes/menu.png") white;
-  background-position: 76px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 2s;
-}
-
-.flap::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 50%;
-  right: 0;
-  background: url("../imagenes/menu.png") white;
-  background-position: -122px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 2s;
-}
 
 .container:hover .flap::after {
   transform: translatex(300px);
@@ -410,6 +382,10 @@ a:hover .nose{
     grid-area: tercero;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .tamaño{
+    max-width: 300px;
   }
   .g4{
     grid-area: cuarto;
@@ -480,7 +456,7 @@ a:hover .nose{
   .container{
     height: auto;
     width: auto;
-    box-shadow: 0;
+    box-shadow: inherit;
   }
   
   }
