@@ -466,4 +466,18 @@ a:hover .nose{
 .nose{
   visibility:visible;
 }
+.grilla1{
+  display: grid;
+  grid-template-areas:
+  'primero'
+  'tercero'
+  'none';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+}
+.tamaño {
+  max-width: 200px;
+}
   }
