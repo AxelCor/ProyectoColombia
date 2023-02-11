@@ -477,7 +477,17 @@ a:hover .nose{
 .tamaño {
   max-width: 200px;
 }
-body{
+.cel{
   background-color: black;
+  background-image: none;
+}
+.menucel{
+  display: none;
+}
+.videoweb{
+  display: none;
+}
+.videocel{
+  height: 100%;
 }
   }
