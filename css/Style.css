@@ -141,7 +141,6 @@ a{
 
 .barramenu{
     width: 250px;
-    margin-top: 30px;
 }
 
 a:hover .nose{
@@ -372,6 +371,9 @@ a:hover .nose{
 
   .g1{
     grid-area: primero;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .g2{
     grid-area: segundo;
@@ -402,7 +404,7 @@ a:hover .nose{
 .grilla1{
   display: grid;
   grid-template-areas:
-  'primero segundo'
+  'primero primero'
   'tercero tercero'
   'none none';
   grid-template-rows: 1fr 1fr 1fr;
@@ -458,5 +460,10 @@ a:hover .nose{
     width: auto;
     box-shadow: inherit;
   }
-  
+  .barramenu {
+    max-width: 100%;
+}
+.nose{
+  visibility:visible;
+}
   }
