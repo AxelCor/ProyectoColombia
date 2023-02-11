@@ -18,7 +18,7 @@ body {
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-background-color: black
+background-color: black;
 background-image: url(../imagenes/fondo14.png);
 }
 
@@ -440,6 +440,9 @@ a:hover .nose{
     justify-content: flex-end;
     height: 100vh;
 }
+.videocel{
+  display: none;
+}
 
 @media (max-width: 767px) {
   .flex{
@@ -450,6 +453,7 @@ a:hover .nose{
     height: auto;
     width: auto;
     box-shadow: inherit;
+    background: none;
   }
   .barramenu {
     max-width: 100%;
@@ -481,6 +485,8 @@ a:hover .nose{
   display: none;
 }
 .videocel{
+  display: block;
   height: 100%;
 }
+
   }
