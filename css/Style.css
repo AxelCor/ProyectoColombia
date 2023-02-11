@@ -18,19 +18,13 @@ body {
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-background-color: rgb(255 217 0);
+background-color: black
 background-image: url(../imagenes/fondo14.png);
 }
 
 .fondoJuegos{
   background-image: url(../imagenes/fondo12.jpg);
 }
-.fondoindex{
-  background-color: black;
-}
-/* .acomodando{
-  margin-top: -310px;
-} */
 
 .card{
   padding: 1em;
@@ -477,8 +471,7 @@ a:hover .nose{
 .tamaño {
   max-width: 200px;
 }
-.cel{
-  background-color: black;
+.sinfondo{
   background-image: none;
 }
 .menucel{
