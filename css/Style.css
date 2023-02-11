@@ -19,7 +19,7 @@ body {
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-background-color: #ffc107;
+background-color: rgb(255 217 0);
 background-image: url(../imagenes/fondo14.png);
 }
 
