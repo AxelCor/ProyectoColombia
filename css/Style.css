@@ -488,5 +488,10 @@ a:hover .nose{
   display: block;
   height: 100%;
 }
-
+.mundodiv{
+  display: none;
+}
+.center{
+  justify-content: center;
+}
   }
