@@ -444,7 +444,7 @@ a:hover .nose{
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 750px) {
   .flex{
     align-items: center;
     justify-content: center;
