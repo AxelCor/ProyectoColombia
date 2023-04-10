@@ -7793,7 +7793,7 @@ if (reversed == null) { reversed = false; }
 		this.button_6.addEventListener("click", fl_ClickToGoToWebPage);
 		
 		function fl_ClickToGoToWebPage() {
-			window.open("axelcor.github.io/ProyectoColombia/", "_blank");
+			window.open("https://axelcor.github.io/ProyectoColombia/paginas/juegos.html", "_blank");
 		}
 		var _this = this;
 		/*
