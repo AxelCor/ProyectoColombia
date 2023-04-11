@@ -182,13 +182,10 @@ a:hover .nose{
 
 
 .imgnosotros {
-    width: 300px;
-    height: 100%;
+    width: 200px;
+    height: 266px;
     object-fit:cover;
     -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(0deg);
-    transition:0.5s;
     border-radius: 1rem;
     box-shadow: 5px 8px 12px black;
   }
@@ -236,17 +233,10 @@ a:hover .nose{
     /* -webkit-mask-composite: xor; */
     -webkit-mask-clip: text, padding-box;
   }
-  .efecto:hover .pimage{
-    --_i: 0%;
+  button{
+    background: transparent;
+    border-radius: 1rem;
   }
-
-  @supports not (-webkit-mask-clip: text) {
-    .efecto .pimage {
-     -webkit-mask: none;
-     color: #fff;
-    }
-  }
-
   .ulLi{
     font-weight: 600;
     font-size: x-large;
@@ -479,18 +469,7 @@ a:hover .nose{
       align-items: center;
       justify-content: center;
 }
-footer{
-  background-color: #00000026;
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-p{
-  font-size: x-large;
-  color: aliceblue;
-}
+
 
 .flex{
   display: flex;
@@ -514,6 +493,52 @@ p{
 .off{
   display: none;
 }
+.centro{
+  display: flex;
+  justify-content: center;
+}
+
+.zoom{
+  transition: transform 300ms ease-out 500ms;
+}
+.zoom:hover{
+  transform: translate(0px, 0px) scale(1.3, 1.3);
+  z-index: 5;
+  background-color: #00000057;
+    border-radius: 1rem;
+}
+
+.wrapper{
+  margin-top: 100px;
+}
+
+.triggercircle{
+  background-color: grey;
+  border: 20px solid black;
+  height: 200px;
+  width: 200px;
+  margin: 400px auto;
+  
+  border-radius: 50%;
+}
+
+.circle{
+  display: inline-block;
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 600ms ease-in-out; 
+  pointer-events: none;
+}
+
+.triggercircle.clicked .circle{
+  background-color: red;
+  transform: scale(3);
+  border: 20px solid black;
+}
+
+
 @media (max-width: 750px) {
   .off{
     display:flex;
@@ -549,7 +574,7 @@ p{
   margin: 0;
 }
 .tamaño {
-  max-width: 200px;
+  max-width: 160px;
 }
 .sinfondo{
   background-image: none;
