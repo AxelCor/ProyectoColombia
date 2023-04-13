@@ -110,7 +110,13 @@ background-image: url(../imagenes/fondo14.png);
   margin-right: auto;
   align-items: center;
 }
-
+  .ulLi{
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 8px black;
+  }
 .ulLi1{
   color: #f44336;
   font-weight: 600;
@@ -197,13 +203,9 @@ a:hover .nose{
     gap:20px;
     margin: 40px;
   }
-  /* .containerNosotros:hover img {
-    opacity:0.3;
-  } */
-  /* .containerNosotros img:hover {
-    transform:perspective(800px)       rotateY(180deg);
-    opacity:0.3;
-  } */
+.vh60{
+  height: 60vh;
+}
 
 
   .efecto{
@@ -219,9 +221,10 @@ a:hover .nose{
     transition: .4s;
   }
   .pimage {
-    display: grid;
-    align-items: end;
-    font-size: 2.3rem;
+    display: flex;
+    align-items:center;
+    width: 500px;
+    font-size:medium;
     font-weight: bold;
     color: white;
     padding: .75rem;
@@ -232,25 +235,36 @@ a:hover .nose{
     /* -webkit-mask-composite: xor; */
     -webkit-mask-clip: text, padding-box;
   }
-  .ulLi{
-    font-weight: 600;
-    font-size: x-large;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 8px black;
+  button{
+    background: transparent;
+    border-radius: 1rem;
   }
+
   .nose1{
+    visibility: hidden;
     font-size: x-large;
     font-weight: 900;
     color: wheat;
     margin: 10px;
   }
   .visible{
-    display:none;
+    visibility: hidden;
   }
-
+  .nose2{
+    visibility: hidden;
+    font-size: x-large;
+    font-weight: 600;
+    color: wheat;
+    margin: 10px;
+  }
+  a:hover .visible{
+    visibility: visible;
+  }
   a:hover .nose1{
-   display: none;
+    visibility: visible;
+  }
+  a:hover .nose2{
+    visibility: visible;
   }
 
   #title-Tag-Line {
@@ -467,6 +481,7 @@ a:hover .nose{
 }
 .titgrande{
   font-size: xx-large;
+  visibility: visible;
 }
 
 .year{
@@ -481,22 +496,36 @@ a:hover .nose{
 }
 
 .zoom{
-  transition: transform 400ms ease-out 800ms;
+  transition: transform 300ms ease-out 500ms;
 }
 .zoom:hover{
-  transform: translate(400px, 0px) scale(1.5, 1.5);
+  transform: translate(0px, 0px) scale(1.3, 1.3);
   z-index: 2;
-  background-color: #00000057;
+    border-radius: 1rem;
+}
+.zoom1:active{
+  transform: translate(300px, 0px) scale(1.5, 1.5);
+  z-index: 2;
   border-radius: 1rem;
 }
-.zoom:hover .visible{
-  display: grid;
+.zoom2:active{
+  transform: translate(0px, 0px) scale(1.5, 1.5);
+  z-index: 2;
+  border-radius: 1rem;
+}
+.zoom:active .off{
+  display: flex;
+}
+.zoom:active .ulLi{
+  display: none;
 }
 
 .wrapper{
-  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 
 @media (max-width: 750px) {
