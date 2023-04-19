@@ -528,6 +528,11 @@ a:hover .nose{
   justify-content: center;
   margin-top: 100px;
 }
+.google{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 
 
 @media (max-width: 750px) {
@@ -555,14 +560,19 @@ a:hover .nose{
 }
 .grilla1{
   display: grid;
-  grid-template-areas:
+  /* grid-template-areas:
   'primero'
   'tercero'
-  'none';
+  'none'; */
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
+  justify-items: center;
+  grid-column-gap: 0px;
+}
+.g1{
+  padding: 0;
 }
 .tamaño {
   max-width: 160px;
