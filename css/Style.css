@@ -202,6 +202,7 @@ a:hover .nose{
     align-items:center;
     gap:20px;
     margin: 40px;
+    flex-wrap: wrap;
   }
 .vh60{
   height: 60vh;
@@ -496,12 +497,12 @@ a:hover .nose{
 }
 
 .zoom{
-  transition: transform 300ms ease-out 500ms;
+  transition: transform 300ms ease-out;
 }
 .zoom:hover{
   transform: translate(0px, 0px) scale(1.3, 1.3);
   z-index: 2;
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 .zoom1:active{
   transform: translate(300px, 0px) scale(1.5, 1.5);
@@ -523,8 +524,9 @@ a:hover .nose{
 .wrapper{
   height: 100vh;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 
