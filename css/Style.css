@@ -10,16 +10,17 @@ body {
   display: grid;
   height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  sans-serif; */
+  font-family: 'Baby doll', sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
 background-color: black;
-background-image: url(../imagenes/fondo14.png);
+background-image: url(../imagenes/fondo14.jpg);
 }
 
 .fondoJuegos{
@@ -156,10 +157,6 @@ a:hover .nose{
   visibility: visible;
 }
 
-/* .top{
-  top: -180px;
-  position: relative;
-} */
 .mundo{
   height: 250px;
 }
@@ -173,6 +170,9 @@ a:hover .nose{
 }
 
 .bodyNosotros {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   width: 100%;
   place-items:center;
   background-image: url(../imagenes/fondo13.jpg);
@@ -198,16 +198,9 @@ a:hover .nose{
 
   .containerNosotros {
     display:flex;
-    justify-content:center;
-    align-items:center;
     gap:20px;
-    margin: 40px;
     flex-wrap: wrap;
   }
-.vh60{
-  height: 60vh;
-}
-
 
   .efecto{
     display: grid;
@@ -378,9 +371,9 @@ a:hover .nose{
   }
 
   .tit{
-    background-color: darkgrey;
+    background-color: #a9a9a980;
     border-radius: 30px;
-    width: 400px;
+    width: 500px;
     }
 
 .new{
@@ -410,7 +403,11 @@ a:hover .nose{
   .g2{
     grid-area: segundo;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+  }
+  .tamaño{
+    max-width: 300px;
   }
   .g3{
     grid-area: tercero;
@@ -418,27 +415,35 @@ a:hover .nose{
     justify-content: center;
     align-items: center;
   }
-  .tamaño{
-    max-width: 300px;
-  }
   .g4{
     grid-area: cuarto;
     display: flex;
-    justify-content: center;
-    margin: 30px;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  .g5{
-    grid-area: quinto;
-    display: flex;
-    justify-content: center;
-  }
-
+.Bangers{
+  font-family: 'Bangers';
+  font-size: 3em;
+  display: flex;
+}
+.yellow{
+color: #ffd703;
+-webkit-text-stroke: 2px black;
+}
+.blue{
+color: #104a8a;
+-webkit-text-stroke: 2px black;
+}
+.red{
+color: #c71417;
+-webkit-text-stroke: 2px black;
+}
 .grilla1{
   display: grid;
   grid-template-areas:
   'primero primero'
-  'tercero tercero'
-  'segundo segundo';
+  'segundo segundo'
+  'none none';
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -449,9 +454,45 @@ a:hover .nose{
 .grilla2{
   display: grid;
   grid-template-areas:
-  'cuarto'
-  'quinto';
-  grid-template-rows: 2fr 1fr;
+  'tercero tercero'
+  'cuarto cuarto'
+  'none none';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+.gN1{
+  grid-area: pN;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gN2{
+  grid-area: sN;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grillaNosotros{
+  display: grid;
+  grid-template-areas:
+  'pN'
+  'sN'
+  'sN';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+}
+.grillaNosotros2{
+  display: grid;
+  grid-template-areas:
+  'pN';
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
   margin: 0;
@@ -505,12 +546,17 @@ a:hover .nose{
   border-radius: 1rem;
 }
 .zoom1:active{
-  transform: translate(300px, 0px) scale(1.5, 1.5);
+  transform: translate(400px, 0px) scale(1.5, 1.5);
   z-index: 2;
   border-radius: 1rem;
 }
 .zoom2:active{
   transform: translate(0px, 0px) scale(1.5, 1.5);
+  z-index: 2;
+  border-radius: 1rem;
+}
+.zoom3:active{
+  transform: translate(-300px, 0px) scale(1.5, 1.5);
   z-index: 2;
   border-radius: 1rem;
 }
@@ -521,13 +567,6 @@ a:hover .nose{
   display: none;
 }
 
-.wrapper{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 100px;
-}
 .google{
   position: fixed;
   right: 0;
