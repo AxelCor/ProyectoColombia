@@ -527,7 +527,8 @@ color: #c71417;
 }
 
 .year{
-  margin:25px;
+  background: #00000052;
+  border-radius: 1rem;
 }
 .off{
   display: none;
