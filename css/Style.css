@@ -199,7 +199,6 @@ a:hover .nose{
   .containerNosotros {
     display:flex;
     gap:20px;
-    flex-wrap: wrap;
   }
 
   .efecto{
@@ -222,7 +221,7 @@ a:hover .nose{
     font-weight: bold;
     color: white;
     padding: .75rem;
-    background: #00000085;
+    background: #000000ba;
     -webkit-mask:
       linear-gradient(#000 0 0),
       linear-gradient(#000 0 0);
@@ -552,12 +551,22 @@ color: #c71417;
   border-radius: 1rem;
 }
 .zoom2:active{
-  transform: translate(0px, 0px) scale(1.5, 1.5);
+  transform: translate(100px, -100px) scale(1.5, 1.5);
   z-index: 2;
   border-radius: 1rem;
 }
 .zoom3:active{
-  transform: translate(-300px, 0px) scale(1.5, 1.5);
+  transform: translate(0px, 0px) scale(1.5, 1.5);
+  z-index: 2;
+  border-radius: 1rem;
+}
+.zoom4:active{
+  transform: translate(-200px, 0px) scale(1.5, 1.5);
+  z-index: 2;
+  border-radius: 1rem;
+}
+.zoom5:active{
+  transform: translate(-400px, 0px) scale(1.5, 1.5);
   z-index: 2;
   border-radius: 1rem;
 }
@@ -572,6 +581,26 @@ color: #c71417;
   position: fixed;
   right: 0;
   bottom: 0;
+}
+@media (max-width: 1025px) {
+  .imgnosotros {
+    width: 133px;
+    height: 177px;
+  }
+  .titgrande {
+    font-size: large;
+}
+.pimage {
+  width: 400px;
+  font-size: x-small;
+}
+.zoom1:active{
+  transform: translate(200px, 0px) scale(1.5, 1.5);
+}
+.nose1 {
+  font-size: large;
+  font-weight: 900;
+}
 }
 
 
