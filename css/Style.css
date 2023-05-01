@@ -587,6 +587,9 @@ color: #c71417;
   right: 0;
   bottom: 0;
 }
+.menuWeb{
+  display: none;
+}
 @media (max-width: 1025px) {
   .imgnosotros {
     width: 133px;
@@ -612,6 +615,11 @@ color: #c71417;
 @media (max-width: 750px) {
   body{
     background-image: url(../imagenes/fondoSpace.jpg);
+  }
+  .menuWeb{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .negra{
     color: #000;
@@ -641,6 +649,12 @@ color: #c71417;
   visibility:visible;
   text-shadow: 2px 2px 2px yellow;
 }
+.gAbajo{
+  grid-area: abajo;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 .grilla1{
   background-image: url(../imagenes/fondoNave.png);
   background-position: bottom, center;
@@ -648,17 +662,18 @@ color: #c71417;
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
   display: grid;
-  /* grid-template-areas:
+  grid-template-areas:
   'primero'
-  'tercero'
-  'none'; */
+  'segundo'
+  'abajo';
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  /* height: 100vh; */
+  height: 100vh;
   margin: 0;
   justify-items: center;
   grid-column-gap: 0px;
 }
+
 .grilla2{
   background-color: #f8fbfc;
   display: grid;
@@ -682,6 +697,9 @@ color: #c71417;
 }
 .tamaño {
   max-width: 160px;
+}
+.tamVideo{
+  max-width: 300px;
 }
 .sinfondo{
   background-image: none;
