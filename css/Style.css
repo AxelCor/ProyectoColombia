@@ -605,6 +605,11 @@ color: #c71417;
 
 
 @media (max-width: 750px) {
+  .negra{
+    color: #000;
+    font-family: cursive;
+  }
+  
   .off{
     display:flex;
   }
@@ -626,6 +631,7 @@ color: #c71417;
 }
 .nose{
   visibility:visible;
+  text-shadow: 2px 2px 2px yellow;
 }
 .grilla1{
   display: grid;
