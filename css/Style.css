@@ -611,71 +611,53 @@ color: #c71417;
 }
 
 @media (max-width: 750px) {
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    /* background-color: black; */
+  }
+  
+  .dropdown.show .dropdown-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff70;
+    border-radius: 1em;
+}
+
+
+  
   body{
     background-image: url(../imagenes/fondoSpace.jpg);
   }
   .menuCelular{
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
-  ul{
-    display: none;
-  }
-  
-  input:checked  ~ ul{
-    display:block;
-  }
-  
-  input {
-    display: none;
-  }
-  .navMenu{
-    width: 100px;
-    height: 100px;
-  }
-  label {
-    /* box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 55px;
-    width: 55px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none; */
-  }
-  
-  
-  /* Estilo del boton cuando el menú está expandido*/
-  input:checked ~ label {
-    /* margin-left: 100px; */
-  }
-  
-  ul{
-    margin-top:0;
-    padding: 0;
-    width: 380px;
-    margin-top: -124px;
-  }
-  
-  .aMenu{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  li {
-    display: block;
-    background: #ffffff70;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-  }
+
   
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
-  li:hover {
-    filter: brightness(110%);
+  a:hover {
+    filter: brightness(130%);
+    transform: scale(1.1, 1.1);
   }
 
   .negra{
@@ -751,7 +733,7 @@ color: #c71417;
 .g1{
   grid-area: primero;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
 }
 .tamaño {
