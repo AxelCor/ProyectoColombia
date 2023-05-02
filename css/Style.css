@@ -83,11 +83,7 @@ background-image: url(../imagenes/fondo14.jpg);
   justify-content: center;
 }
 
-.content {
-  /* padding: 17px;
-  position: absolute;
-  margin-left: 13%; */
-}
+
 
 
 
@@ -610,17 +606,78 @@ color: #c71417;
   font-weight: 900;
 }
 }
-
+.menuCelular{
+  display: none;
+}
 
 @media (max-width: 750px) {
   body{
     background-image: url(../imagenes/fondoSpace.jpg);
   }
-  .menuWeb{
+  .menuCelular{
     display: flex;
     align-items: center;
-    flex-direction: column;
   }
+  ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+  input {
+    display: none;
+  }
+  .navMenu{
+    width: 100px;
+    height: 100px;
+  }
+  label {
+    /* box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 55px;
+    width: 55px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none; */
+  }
+  
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    /* margin-left: 100px; */
+  }
+  
+  ul{
+    margin-top:0;
+    padding: 0;
+    width: 380px;
+    margin-top: -124px;
+  }
+  
+  .aMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  li {
+    display: block;
+    background: #ffffff70;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  li:hover {
+    filter: brightness(110%);
+  }
+
   .negra{
     color: #000;
     font-family: "Asap", Arial, Verdana, sans-serif;
@@ -643,7 +700,7 @@ color: #c71417;
     background: none;
   }
   .barramenu {
-    max-width: 100%;
+    max-width: 150px;
 }
 .nose{
   visibility:visible;
@@ -670,7 +727,6 @@ color: #c71417;
   grid-template-columns: 1fr;
   height: 100vh;
   margin: 0;
-  justify-items: center;
   grid-column-gap: 0px;
 }
 
@@ -693,7 +749,10 @@ color: #c71417;
 }
 
 .g1{
-  padding: 0;
+  grid-area: primero;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .tamaño {
   max-width: 160px;

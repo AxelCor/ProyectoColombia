@@ -12,9 +12,10 @@
     <link href="https://fonts.cdnfonts.com/css/baby-doll-2" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./cuento.js"></script>
 </head>
 <body>
-    <header class="grilla1">
+    <!-- <header class="grilla1 menucel">
       <div class="g1">
         <div class='divflex'>
           <a href="../index.html"><img class="barramenu" src="../imagenes/botonmenu.png" alt="INICIO"><li class='ulLi1 azul nose negra'>INICIO</li></a>
@@ -37,7 +38,58 @@
           <a class="menuWeb" href="./SopaDeLetras.html"><img class="barramenu" src="../imagenes/botonjuegos.png" alt="JUEGOS"><li class='ulLi1 azul nose negra gAbajo '>JUEGOS</li></a>
         </div>
       </div>
+    </header> -->
+    <header class="grilla1">
+      <div class="g1">
+          <div class="menuCelular">
+            <!-- <div><a href="../index.html"><img class="barramenu" src="../imagenes/botonmenu.png" alt="INICIO"><div class='ulLi1 azul nose negra'>INICIO</div>
+            </a>
+            </div> -->
+            
+            <div>
+              <input type="checkbox" id="menu">
+              <label for="menu" ><img class="navMenu" src="../imagenes/menu.gif" alt="MENU"></label>
+              <ul>
+                <li>
+                  <a href="#" class="aMenu"><img class="barramenu" src="../imagenes/cuento.png" alt="CUENTO">
+                    <div class='ulLi1 azul nose negra'>CUENTO</div></a>
+                </li>
+                <li>
+                  <a class="aMenu" href="./SopaDeLetras.html"><img class="barramenu" src="../imagenes/botonjuegos.png" alt="JUEGOS"><div class='ulLi1 azul nose negra gAbajo '>JUEGOS</div></a>
+                </li>
+                <li><a href="#musica" class="aMenu"><img class="barramenu" src="../imagenes/karaoke.png" alt="KARAOKE"><div class='ulLi1 text nose negra'>KARAOKE</div></a></li>
+                <li><a href="#" class="aMenu"><img class="barramenu" src="../imagenes/obradeteatro.png" alt="OBRADETEATRO"><div class='ulLi1 text nose negra'>TEATRO</div></a></li>
+                <li><a href="./nosotros.html" class="aMenu"><img class="barramenu" src="../imagenes/nosotros.png" alt="NOSOTROS"><div class="ulLi1 azul nose negra" > NOSOTROS</div></a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="g2">
+        
+        <div data-tilt data-tilt-scale="0.95" data-tilt-startY="40">
+            <img class="tamaño animate__animated animate__heartBeat animate__infinite animate__slower"  src="../imagenes/titulo.png" alt="TITULO">
+        </div>
+        
+      </div>
+      <div class="gAbajo">
+        <div class='divflex'>
+          
+        </div>
+      </div>
     </header>
+    <!-- <div class="menuCelular">
+      <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu" ><img class="navMenu" src="../imagenes/menu.gif" alt="MENU"></label>
+        <ul>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+          <li>Link 5</li>
+        </ul>
+      </nav>
+    </div> -->
         <!-- ///TRADUCTOR/// -->
         <div id="google_translate_element" class="google"></div>
         <script type="text/javascript">
@@ -46,7 +98,7 @@
           }
         </script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <div class="grilla2">
+    <!-- <div class="grilla2">
       <div class="g3">
         <h1 class="Bangers animate__animated animate__heartBeat animate__infinite animate__slower" id="musica">
           <i class="fa-sharp fa-solid fa-music" style="color: #000000;"></i>
@@ -57,14 +109,14 @@
       <div class="g4">
         <div class="medio">
           <h2 class="negra">CANCIÓN</h2>
-          <video class="tamVideo" src="../imagenes/cancion.mp4" controls poster="../imagenes/karaoke.png" class="tamaño"></video>
+          <video class="tamVideo tamaño" src="../imagenes/cancion.mp4" controls poster="../imagenes/karaoke.png" ></video>
         </div>
         <div class="medio">
           <h2 class="negra">KARAOKE</h2>
-        <video class="tamVideo" src="../imagenes/karaoke.mp4" controls poster="../imagenes/karaoke.png" class="tamaño"></video>
+        <video class="tamVideo tamaño" src="../imagenes/karaoke.mp4" controls poster="../imagenes/karaoke.png"></video>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="./script.js"></script>
 </body>
