@@ -822,7 +822,9 @@ color: #c71417;
 }
 .videocel{
   display: block;
-  height: 100%;
+    height: 100%;
+    width: 140%;
+    background-color: #33007f;
 }
 .mundodiv{
   display: none;
