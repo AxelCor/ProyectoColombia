@@ -730,15 +730,53 @@ color: #c71417;
   justify-content: flex-start;
 }
 .titCuentoCel{
-  color: white;
   font-family: "Asap", Arial, Verdana, sans-serif;
   text-align: center;
   margin-bottom: 50px;
-  text-shadow: 0px 0px 25px black;
   font-size: medium;
+  color: #c69c1e;
+  text-shadow: 0  2px  0   #8b6e15,
+               0  4px  0   #7c6213,
+               0  6px  0   #6e5611, 
+               0  8px  0   #5f4b0e, 
+               0 10px  0   #503f0c,
+               0 12px  0   #41330a,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
+}
+.musica{
+  margin: 0px;
+  font-size: large;
+  background-image: url(../imagenes/fondoSpace.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5em;
+  box-shadow: 0px 0px 20px black;
+}
+.medio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sub{
+  width: 120px;
+  height: 120px;
 }
 .grilla2{
-  background-color: #f8fbfc;
+  background-color: white;
+  background-image: url(../imagenes/fondo12.jpg);
+    background-position: bottom, center;
+  -webkit-background-size: contain, cover;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
   display: grid;
   grid-template-areas:
   'tercero'
@@ -754,7 +792,11 @@ color: #c71417;
   flex-direction: column;
   align-items: center;
 }
-
+.g3{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(248,251,252,1) 50%);
+  width: 100%;
+}
 .g1{
   grid-area: primero;
   display: flex;
@@ -765,7 +807,9 @@ color: #c71417;
   max-width: 160px;
 }
 .tamVideo{
-  max-width: 300px;
+  max-width: 230px;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px black;
 }
 .sinfondo{
   background-image: none;
