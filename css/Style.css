@@ -832,4 +832,18 @@ color: #c71417;
 .center{
   justify-content: center;
 }
+.vWeb{
+  display: none;
+}
+.pageTitle{
+  font-size: revert;
+}
+.form{
+  width: auto;
+}
+.formEntry{
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
 }
