@@ -767,8 +767,8 @@ color: #c71417;
   width: 100%;
 }
 .sub{
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 .grilla2{
   background-color: white;
@@ -807,7 +807,7 @@ color: #c71417;
   max-width: 160px;
 }
 .tamVideo{
-  max-width: 230px;
+  max-width: 200px;
   border-radius: 1em;
   box-shadow: 0px 0px 20px black;
 }
