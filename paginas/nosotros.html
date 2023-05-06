@@ -9,7 +9,6 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../css/Style.css'>
   <link rel="shortcut icon" href="../imagenes/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="nosotros.js"></script>
 </head>
 
 <body class="bodyNosotros">
@@ -109,17 +108,43 @@
     </div>
   </div>
 
-  <!-- <div class="grillaNosotros vCel">
+  <div class="grillaNosotros vCel">
     <div class="gN1 center">
       <div class="containerNosotros">
-        <a href="./cuento.html"><img class='tit animate__animated animate__heartBeat animate__infinite animate__slower'
+        <a class="divflex" href="./cuento.html"><img class='tit animate__animated animate__heartBeat animate__infinite animate__slower'
             src="../imagenes/logomenu.png" alt="logo-menu"></a>
       </div>
     </div>
     <div class="gN2">
+      
 
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="../imagenes/axel.jpg" alt="Imagen 1">
+          <div class="carousel-caption">
+            <h3>Título de la imagen 1</h3>
+            <p>Descripción de la imagen 1</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="../imagenes/cathe.jpg" alt="Imagen 2">
+          <div class="carousel-caption">
+            <h3>Título de la imagen 2</h3>
+            <p>Descripción de la imagen 2</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img class="imgnosotros" src="../imagenes/ale.jpeg" alt="Imagen 3">
+          <div class="carousel-caption">
+            <h3>Título de la imagen 3</h3>
+            <p>Descripción de la imagen 3</p>
+          </div>
+        </div>
+        <button class="carousel-prev">&lsaquo;</button>
+        <button class="carousel-next">&rsaquo;</button>
+      </div>
     </div>
-  </div> -->
+  </div>
   
 
 
@@ -140,6 +165,10 @@
   </div>
     <!-- ///TRADUCTOR/// -->
     <div id="google_translate_element" class="google"></div>
+
+
+    <script src="./nosotros.js"></script>
+
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');

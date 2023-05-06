@@ -128,6 +128,7 @@ a{
 .divflex{
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .azul{
@@ -345,19 +346,7 @@ a:hover .nose{
     border-top: 5px solid #0e3750;
     border-radius: 0%;
   }
-  /* .pimage{
-    width: 500px;
-    font-size: xx-large;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 8px black;
-    background: #0000008f;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
-  } */
+
   .p1{
     left: 65%;
   }
@@ -609,9 +598,15 @@ color: #c71417;
 .menuCelular{
   display: none;
 }
+.vCel{
+  display: none;
+}
 
 @media (max-width: 750px) {
 
+  .vCel{
+    display: block;
+  }
   .dropdown {
     position: relative;
     display: inline-block;
@@ -845,5 +840,113 @@ color: #c71417;
   margin: 10px;
   font-size: 12px;
   font-weight: 900;
+}
+.tit{
+  width: 50%;
+  margin: 20px;
+}
+/* .gN1{
+  grid-area: pN;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grillaNosotros{
+  display: grid;
+  grid-template-areas:
+  'pN'
+  'sN'
+  'sN';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+}
+.grillaNosotros2{
+  display: grid;
+  grid-template-areas:
+  'pN';
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  margin: 0;
+} */
+.gN2{
+  grid-area: sN;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-slide {
+  height: 80%; /* ajustar la altura según sea necesario */
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 177px;
+  height: 236px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem;
+  color: white;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  color: rgba(255,255,255,0.5);
+}
+
+.carousel-prev {
+  left: 1rem;
+}
+
+.carousel-next {
+  right: 1rem;
 }
 }
