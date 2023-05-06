@@ -310,7 +310,6 @@ a:hover .nose{
   .message:hover {
     border-bottom: 5px solid #0e3721;
     height: 12em;
-    width: 500px;
     transition: ease 0.5s;
   }
   
@@ -948,8 +947,15 @@ color: #c71417;
   margin: 0 auto;
   
 }
+.nose1{
+  visibility: visible;
+}
 
 .carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
