@@ -74,7 +74,7 @@ btn2.addEventListener('click', () => {
 btn3.addEventListener('click', () => {
   overlayImage.src = '../imagenes/ale.jpeg';
   overlayImage.alt = 'Imagen 3';
-  overlayText.textContent = 'Texto para la imagen 3';
+  overlayText.textContent = 'Alba Alexandra Rubio Ramírez nació en Ibagué, Colombia. Estudió arte Dramático en la Universidad del Valle, en la ciudad de Cali. Escritora de guiones para cine, poemas,obras de teatro infantil y juvenil, canciones, al igual que himnos Institucionales. Docente de Danzas y Teatro por más de 20 años, tanto en la Secretaria de Educación del Distrito como en la Gobernación de Cundinamarca en los que dirigió diferentes grupos teatrales, una de las obras ganadoras en el año 2000 fue “Sueños en el lumbral del Silencio” realizada con estudiantes de la Institución Educativa República de Panamá, los cuales tenían limitación auditiva. Asistió con el apoyo de la ONU a la Habana Cuba con la ponencia sobre inclusión de este tipo de estudiantes en las aulas regulares. Participó del diplomado sobre Modificalidad Cognitiva y pensamiento divergente realizado por la cooperativa de educadores del magisterio CODEMA, visitando los colegios que aplican esta metodología con sus estudiantes en Alemania, Francia, Suiza, Italia, y España. Ha participado de varios talleres de Creación Literaria realizados por IDARTES y trabaja activamente para difundir sus obras a las nuevas generaciones.';
   overlay.style.display = 'flex';
 });
 

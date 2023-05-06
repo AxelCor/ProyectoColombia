@@ -930,7 +930,7 @@ color: #c71417;
 .carousel-next {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
   background: none;
   border: none;
   color: #fff;
@@ -978,11 +978,12 @@ color: #c71417;
   left: 50%;
   transform: translateX(-50%); */
   color: white;
-  font-size: medium;
-  text-align: center;
-  z-index: 10000;
-  width: 80%;
+  font-size: smaller;
+    text-align: center;
+    z-index: 10000;
+    width: 94%;
 }
+
 #overlay-content{
   display: flex;
     flex-direction: column;
