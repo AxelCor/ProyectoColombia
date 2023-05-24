@@ -429,11 +429,6 @@ color: #c71417;
 -webkit-text-stroke: 2px black;
 }
 .grilla1{
-  background-image: url(../imagenes/fondoNave.png);
-  background-position: bottom, center;
-  -webkit-background-size: contain, cover;
-  background-size: contain, cover;
-  background-repeat: no-repeat, no-repeat;
   display: grid;
   grid-template-areas:
   'primero primero'
@@ -547,7 +542,7 @@ color: #c71417;
   border-radius: 1rem;
 }
 .zoom1:active{
-  transform: translate(400px, 0px) scale(1.5, 1.5);
+  transform: translate(400px, -60px) scale(1.5, 1.5);
   z-index: 2;
   border-radius: 1rem;
 }
