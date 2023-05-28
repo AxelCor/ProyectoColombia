@@ -7855,7 +7855,11 @@ if (reversed == null) { reversed = false; }
 		  } else if (docElement.mozRequestFullScreen) { // Firefox
 		    docElement.mozRequestFullScreen();
 		  } else if (docElement.webkitRequestFullscreen) { // Chrome, Safari y Opera
-		    docElement.webkitRequestFullscreen();
+		    if (docElement.webkitRequestFullscreen) {
+		      docElement.webkitRequestFullscreen(); // Modo de pantalla completa estándar de Safari
+		    } else if (docElement.webkitEnterFullscreen) {
+		      docElement.webkitEnterFullscreen(); // Modo de pantalla completa antiguo de Safari
+		    }
 		  } else if (docElement.msRequestFullscreen) { // Internet Explorer y Edge
 		    docElement.msRequestFullscreen();
 		  }
