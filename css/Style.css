@@ -379,6 +379,7 @@ a:hover .nose2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
 }
 .tamaño {
   max-width: 300px;
@@ -388,12 +389,6 @@ a:hover .nose2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 30%,
-    rgba(248, 251, 252, 1) 50%
-  );
   width: 100%;
 }
 .g4 {
@@ -429,7 +424,7 @@ a:hover .nose2 {
   grid-template-areas:
     "primero primero"
     "segundo segundo"
-    "none none";
+    "segundo segundo";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -447,7 +442,7 @@ a:hover .nose2 {
   grid-template-areas:
     "tercero tercero"
     "cuarto cuarto"
-    "none none";
+    "cuarto cuarto";
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -584,31 +579,30 @@ a:hover .nose2 {
 .titCuentoCel {
   font-family: "Asap", Arial, Verdana, sans-serif;
   text-align: center;
-  margin-bottom: 50px;
-  font-size: medium;
+  font-size: xx-large;
   color: #c69c1e;
   text-shadow: 0 2px 0 #8b6e15, 0 4px 0 #7c6213, 0 6px 0 #6e5611,
     0 8px 0 #5f4b0e, 0 10px 0 #503f0c, 0 12px 0 #41330a,
     3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);
 }
 .musica {
-  margin-top: 20px;
+  margin: 1em;
   color: #c69c1e;
   font-size: xx-large;
   background-image: url(../imagenes/fondoSpace.jpg);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
-  width: 100%;
+  width: 50%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 25px 4px black;
+  border-radius: 1em;
 }
 
 .tamVideo {
-  max-width: 60%;
+  max-width: 50%;
   border-radius: 1em;
   box-shadow: 0px 0px 20px black;
 }
@@ -697,7 +691,7 @@ a:hover .nose2 {
     background: none;
   }
   .barramenu {
-    max-width: 150px;
+    max-width: 130px;
   }
   .nose {
     visibility: visible;
