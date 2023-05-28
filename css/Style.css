@@ -688,6 +688,7 @@ a:hover .nose2 {
 
   body {
     background-image: url(../imagenes/fondoSpace.jpg);
+    font-family: "Comic Sans MS", cursive;
   }
   .menuCelular {
     width: 100%;
@@ -867,37 +868,7 @@ a:hover .nose2 {
     width: 50%;
     margin: 20px;
   }
-  /* .gN1{
-  grid-area: pN;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
 
-
-.grillaNosotros{
-  display: grid;
-  grid-template-areas:
-  'pN'
-  'sN'
-  'sN';
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  height: 100vh;
-  margin: 0;
-}
-.grillaNosotros2{
-  display: grid;
-  grid-template-areas:
-  'pN';
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  height: 100vh;
-  margin: 0;
-} */
   .gN2 {
     grid-area: sN;
     display: flex;
