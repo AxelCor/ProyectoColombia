@@ -612,35 +612,7 @@ a:hover .nose2 {
   border-radius: 1em;
   box-shadow: 0px 0px 20px black;
 }
-
-/* @media (max-width: 1025px) {
-  .imgnosotros {
-    width: 133px;
-    height: 177px;
-  }
-  .titgrande {
-    font-size: large;
-}
-.pimage {
-  width: 400px;
-  font-size: x-small;
-}
-.zoom1:active{
-  transform: translate(200px, 0px) scale(1.5, 1.5);
-}
-.nose1 {
-  font-size: large;
-  font-weight: 900;
-}
-}
-.menuCelular{
-  display: none;
-}
-.vCel{
-  display: none;
-} */
-
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .vCel {
     display: block;
   }
@@ -989,7 +961,7 @@ a:hover .nose2 {
     height: 100%;
     width: 100%;
   }
-  .titCantar{
+  .titCantar {
     font-family: revert;
   }
 }
