@@ -7926,22 +7926,22 @@ if (reversed == null) { reversed = false; }
 	// Letras
 	this.fullscreenButton = new lib.fullscreenButton();
 	this.fullscreenButton.name = "fullscreenButton";
-	this.fullscreenButton.setTransform(1776.3,989.9);
+	this.fullscreenButton.setTransform(1710.8,857.1,1.5476,1.4882);
 	new cjs.ButtonHelper(this.fullscreenButton, 0, 1, 1);
 
 	this.button_6 = new lib.botonVolver();
 	this.button_6.name = "button_6";
-	this.button_6.setTransform(1513.85,945.35,0.4939,0.5367);
+	this.button_6.setTransform(265.25,893.6,0.6348,0.6647,0,0,0,0.1,0);
 	new cjs.ButtonHelper(this.button_6, 0, 1, 1);
 
 	this.button_3 = new lib.Símbolo1();
 	this.button_3.name = "button_3";
-	this.button_3.setTransform(1458.25,805.65);
+	this.button_3.setTransform(1330.65,822.9,1.3977,1.3457);
 	new cjs.ButtonHelper(this.button_3, 0, 1, 1);
 
 	this.button_1 = new lib.instruccionesboton();
 	this.button_1.name = "button_1";
-	this.button_1.setTransform(1454.1,686);
+	this.button_1.setTransform(1454.1,686,1.4268,1.8094);
 	new cjs.ButtonHelper(this.button_1, 0, 1, 1);
 
 	this.shape_2 = new cjs.Shape();
@@ -8005,7 +8005,7 @@ if (reversed == null) { reversed = false; }
 	this.volver.setTransform(1709.4,990.9);
 	new cjs.ButtonHelper(this.volver, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.button_1},{t:this.button_3},{t:this.button_6},{t:this.fullscreenButton,p:{x:1776.3,y:989.9}}]}).to({state:[]},1).to({state:[{t:this.volver},{t:this.fullscreenButton,p:{x:1773.8,y:88.8}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.button_1},{t:this.button_3},{t:this.button_6},{t:this.fullscreenButton,p:{scaleX:1.5476,scaleY:1.4882,x:1710.8,y:857.1}}]}).to({state:[]},1).to({state:[{t:this.volver},{t:this.fullscreenButton,p:{scaleX:1.3556,scaleY:1.2792,x:1735.9,y:97.4}}]},1).wait(1));
 
 	// Fondo
 	this.instance_3 = new lib.Fondito();
