@@ -613,6 +613,10 @@ a:hover .nose2 {
   box-shadow: 0px 0px 20px black;
 }
 @media (max-width: 1000px) {
+  body {
+    background-image: url(../imagenes/fondoSpace.jpg);
+    font-family: "Tahoma";
+  }
   .vCel {
     display: block;
   }
@@ -658,10 +662,7 @@ a:hover .nose2 {
     box-shadow: 0px 0px 20px yellow;
   }
 
-  body {
-    background-image: url(../imagenes/fondoSpace.jpg);
-    font-family: "Comic Sans MS", cursive;
-  }
+
   .menuCelular {
     width: 100%;
     display: flex;
