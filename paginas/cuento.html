@@ -9,10 +9,9 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='../css/Style.css'>
   <link rel="shortcut icon" href="../imagenes/favicon.png">
-  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
   <link href="https://fonts.cdnfonts.com/css/baby-doll-2" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -30,10 +29,8 @@
         <a href="#"><img class="barramenu" src="../imagenes/cuento.png" alt="CUENTO">
           <li class='ulLi1 text nose negra'>CUENTO</li>
         </a>
-
-
       </div>
-      <div class='divflex espacio'>
+      <div class='divflex'>
         <a href="#musica"><img class="barramenu" src="../imagenes/karaoke.png" alt="KARAOKE">
           <li class='ulLi1 text nose negra'>KARAOKE</li>
         </a>
@@ -53,11 +50,8 @@
         <img class="tamaño animate__animated animate__heartBeat animate__infinite animate__slower"
           src="../imagenes/mundomapa.png" alt="TITULO">
       </div>
-
-
     </div>
   </div>
-
   <div class="grilla2 menucel">
     <div class="g3">
       <div class="titCuentoCel" id="musica">
@@ -70,7 +64,6 @@
         <div class="musica sub">
           <h2>CANCION</h2>
         </div>
-
       </div>
       <div class="medio">
         <video class="tamVideo" src="../imagenes/karaoke.mp4" controls poster="../imagenes/karaoke.png"></video>
@@ -118,7 +111,7 @@
       <div class="titCuentoCel">
         <h1>¡DIVIÉRTETE APRENDIENDO!</h1>
       </div>
-      <div data-tilt data-tilt-scale="0.95" data-tilt-startY="40">
+      <div>
         <img class="tamaño animate__animated animate__heartBeat animate__infinite animate__slower"
           src="../imagenes/mundomapa.png" alt="TITULO">
       </div>
@@ -149,12 +142,10 @@
       </div>
     </div>
   </div>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="./js/cuento.js"></script>
   <!-- ///TRADUCTOR/// -->
   <div id="google_translate_element" class="google"></div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
-
-  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true }, 'google_translate_element');
@@ -162,7 +153,7 @@
   </script>
   <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="module" src="/paginas/cuento.js"></script>
+  <!-- ///TRADUCTOR/////////////////////////// -->
 </body>
 
 </html>

@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 5vmin;
-}
 body {
   display: grid;
   height: 100vh;
@@ -22,38 +19,50 @@ body {
   background-color: black;
   background-image: url(../imagenes/fondoSpace.jpg);
 }
-
-.fondoJuegos {
-  background-image: url(../imagenes/fondo12.jpg);
-}
-
-.card {
-  padding: 1em;
-  border-radius: 10em;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-}
-.cardJuegos {
-  margin: auto;
-  transform: perspective(500px);
-  transform-style: preserve-3d;
-  height: 100%;
+.containerLogin{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 60px;
 }
-.espacio {
-  margin-right: 20px;
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
-
-.videocel {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 105%;
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
-  z-index: -2;
+input{
+  outline: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 15px;
+  padding: 15px;
+  font-size: 14px;
+}
+.boton{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #555355;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor:pointer;
 }
 .videoweb {
   min-width: 100%;
@@ -64,24 +73,16 @@ body {
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -2;
 }
-
-.imginicio {
-  height: 203px;
+.videocel {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
 }
 
-.container {
-  margin: 8px;
-  height: 240px;
-  width: 400px;
-  background: #f2f2f2;
-  overflow: hidden;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 0 4px 8px #d0d0d0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .container:hover .flap::after {
   transform: translatex(300px);
@@ -132,7 +133,7 @@ a {
 
 .nose {
   visibility: hidden;
-  font-size: unset;
+  font-size: -webkit-xxx-large;
   font-weight: 700;
   text-shadow: 2px 2px 2px red;
 }
@@ -356,23 +357,13 @@ a:hover .nose2 {
   grid-template-columns: auto;
   margin: auto;
 }
-@keyframes bounce {
-  0% {
-    tranform: translate(0, 0);
-  }
-  33% {
-    transform: translate(-100px, 0);
-  }
-  66% {
-    transform: translate(100px, 0);
-  }
-}
 
 .g1 {
   grid-area: primero;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .g2 {
   grid-area: segundo;
@@ -587,11 +578,9 @@ a:hover .nose2 {
 }
 .musica {
   margin: 1em;
-  color: #c69c1e;
+  color: white;
   font-size: xx-large;
-  background-image: url(../imagenes/fondoSpace.jpg);
-  background-size: cover;
-  background-position: center center;
+  background-color: #571581;
   width: 50%;
   height: 50%;
   display: flex;
@@ -695,6 +684,7 @@ a:hover .nose2 {
   }
   .nose {
     visibility: visible;
+    font-size: x-large;
     text-shadow: 2px 2px 10px black;
   }
   .gAbajo {
